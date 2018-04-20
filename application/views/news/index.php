@@ -7,7 +7,7 @@ $this->load->view($this->config->item('theme') . 'header'); //we're loading some
 
  ?>
 
-<h2><?php echo $title; ?></h2>
+<h2>News</h2>
 
 <?php foreach ($news as $news_item): ?>
 
@@ -19,6 +19,12 @@ $this->load->view($this->config->item('theme') . 'header'); //we're loading some
 
 <?php endforeach;
 
+?>
+
+<div><?=anchor('news/create','Create News')?></div>
+
+
+<?php
 $this->load->view($this->config->item('theme') . 'footer');
 
 ?>

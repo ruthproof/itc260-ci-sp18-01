@@ -62,6 +62,6 @@ $route['news'] = 'news';
 $route['(:any)'] = 'pages/view/$1';
 
 // defaults
-$route['default_controller'] = 'welcome';
+$route['default_controller'] = 'news';
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
